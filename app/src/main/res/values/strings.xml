@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Littlefinger</string>
+    <string name="description">SMS를 Parse로 전송(MMS 제외)</string>
+    <string name="action_settings">Settings</string>
+</resources>

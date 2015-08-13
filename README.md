@@ -13,6 +13,10 @@ PARSE_CLIENT_KEY=your parse client key
 
 and run android device
 
+## Parse Cloud Code
+
+`parse` directory
+
 ## TODO
 
 - MMS support

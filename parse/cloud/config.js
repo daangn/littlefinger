@@ -1,12 +1,19 @@
 exports.slack = {
-  hookUrl: "https://hooks.slack.com/services/xxx/yyy",
-  channel: "#card",
-  iconEmoji: ":moneybag:"
+  hookUrl: "https://hooks.slack.com/services/xxx/yyy"
 }
 
 exports.sender = function(phoneNumber) {
   var phoneDic = {
-    "15447200": "신한카드"
+    "15447200": {
+      name: '신한카드',
+      channel: '#card',
+      emoji: ':moneybag:'
+    }
   };
-  return phoneDic[phoneNumber] || phoneNumber;
+  var defaultItem = {
+      name: phoneNumber,
+      channel: '#sms',
+      emoji: ':ghost:'
+    }
+  return phoneDic[phoneNumber] || defaultItem;
 }
